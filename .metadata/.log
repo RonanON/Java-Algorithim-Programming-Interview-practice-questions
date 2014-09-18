@@ -19,3 +19,21 @@ org.tigris.subversion.subclipse.core.SVNException: Provided SVN information does
 
 !ENTRY org.eclipse.m2e.logback.appender 4 0 2014-09-16 18:30:03.131
 !MESSAGE Failed to open search index.
+!SESSION 2014-09-18 17:54:50.820 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.7.0_15
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.tigris.subversion.subclipse.core 4 0 2014-09-18 17:55:44.360
+!MESSAGE Could not auto-share project Reverse Words in a String
+!STACK 1
+org.tigris.subversion.subclipse.core.SVNException: Provided SVN information does not match that on disk for project 'Reverse Words in a String'.
+	at org.tigris.subversion.subclipse.core.resources.SVNWorkspaceRoot.setSharing(SVNWorkspaceRoot.java:206)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.autoconnectSVNProject(SVNTeamProviderType.java:140)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.run(SVNTeamProviderType.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2014-09-18 17:55:44.361
+!MESSAGE Provided SVN information does not match that on disk for project 'Reverse Words in a String'.

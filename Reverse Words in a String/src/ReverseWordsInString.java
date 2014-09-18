@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+
+public class ReverseWordsInString {
+
+	
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Enter String:  ");
+		String wordage = input.nextLine();
+
+		System.out.println(wordage);
+		
+		System.out.println(Reverse(wordage));
+		
+	}
+	
+	public static String Reverse(String s){
+		
+		if(s.equals(null)||s.equals("")){
+			
+			return "";
+			
+		}
+		
+		String[] arr = s.split(" ");
+		StringBuilder sb = new StringBuilder();
+		
+		for(int i = arr.length - 1; i >= 0; i--){
+			
+			if(!arr[i].equals("")){
+				
+				sb.append(arr[i]).append(" ");
+				
+			}
+			
+		}
+		
+		String trimmed = sb.toString().trim();
+		
+		return trimmed;
+		
+		
+	}
+
+}
